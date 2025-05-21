@@ -1,0 +1,335 @@
+>> a=5  //declare a variable
+
+a =
+
+     5
+
+>> b=3
+
+b =
+
+     3
+
+
+ //arithmetic operations
+>> a+b
+
+ans =
+
+     8
+
+>> a-b
+
+ans =
+
+     2
+
+>> a*b
+
+ans =
+
+    15
+
+>> a/b
+
+ans =
+
+    1.6667
+
+>> c=a+b
+
+c =
+
+     8
+
+>> d=a*b
+
+d =
+
+    15
+
+>> e=a/b
+
+e =
+
+    1.6667
+
+>> f=a-b
+
+f =
+
+     2
+
+
+>> A = [2,3,4]
+
+A =
+
+     2     3     4
+
+
+
+>> A = [2 3 4]   //row vector
+
+A =
+
+     2     3     4
+	 
+	 
+
+>> A = [2;3;4]  //column vector
+
+A =
+
+     2
+     3
+     4
+
+
+>> A = [2,3,4; 5,6,7;8,9,10]
+
+A =
+
+     2     3     4
+     5     6     7
+     8     9    10
+
+
+>> size(A)  //size of the matrix
+
+ans =
+
+     3     3
+
+
+>> numel(A) // no of elements in the matrix
+
+ans =
+
+     9
+	 
+>> sum(sum(A))  //sum of the all elements in the matrix
+
+ans =
+
+    54
+	
+
+>> min(A)  // rowwise minimum
+
+ans =
+
+     2     3     4
+
+>> min(min(A)) //minimum element of the matrix
+
+ans =
+
+     2
+
+>> max(A)   //rowwise maximum
+
+ans =
+
+     8     9    10
+
+>> max(max(A)) //maximum element of the matrix
+
+ans =
+
+    10
+	
+>> sum(A,1)
+
+ans =
+
+    15    18    21
+
+>> sum(A,2)
+
+ans =
+
+     9
+    18
+    27
+
+
+>> A(2)
+
+ans =
+
+     5
+	 
+>> A(2,1) //first number in second row
+
+ans =
+
+     5
+	 
+>> A(1,:)//every element of the first row
+
+ans =
+
+     2     3     4
+
+>> A(2,:)//every element of the second row
+
+ans =
+
+     5     6     7
+	 
+>> A(1,end)//last number of the first row
+
+ans =
+
+     4
+	 
+	 
+>> A(end,2)//second number of the last row
+
+ans =
+
+     9
+	 
+//display a matrix
+>> A=[1,2,3,4;5,6,7,8;2,4,6,8;1,3,5,7]
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     2     4     6     8
+     1     3     5     7
+
+>> B=[1,0,0,0;0,1,0,0;0,0,1,0;0,0,0,1]
+
+B =
+
+     1     0     0     0
+     0     1     0     0
+     0     0     1     0
+     0     0     0     1
+
+>> A+B
+
+ans =
+
+     2     2     3     4
+     5     7     7     8
+     2     4     7     8
+     1     3     5     8
+
+>> A-B
+
+ans =
+
+     0     2     3     4
+     5     5     7     8
+     2     4     5     8
+     1     3     5     6
+
+>> A*B
+
+ans =
+
+     1     2     3     4
+     5     6     7     8
+     2     4     6     8
+     1     3     5     7
+
+>> A+5
+
+ans =
+
+     6     7     8     9
+    10    11    12    13
+     7     9    11    13
+     6     8    10    12
+
+>> A-2
+
+ans =
+
+    -1     0     1     2
+     3     4     5     6
+     0     2     4     6
+    -1     1     3     5
+
+>> A*2
+
+ans =
+
+     2     4     6     8
+    10    12    14    16
+     4     8    12    16
+     2     6    10    14
+
+>> A/2
+
+ans =
+
+    0.5000    1.0000    1.5000    2.0000
+    2.5000    3.0000    3.5000    4.0000
+    1.0000    2.0000    3.0000    4.0000
+    0.5000    1.5000    2.5000    3.5000
+
+>> A.*B
+
+ans =
+
+     1     0     0     0
+     0     6     0     0
+     0     0     6     0
+     0     0     0     7
+
+>> A=zeros(2,3)
+
+A =
+
+     0     0     0
+     0     0     0
+
+>> A=ones(4,3)
+
+A =
+
+     1     1     1
+     1     1     1
+     1     1     1
+     1     1     1
+
+
+A = [1,2,3;4,5,6;7,8,9]
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+
+ 
+>> B=[2,3,4;5,6,7;8,6,9]
+
+B =
+
+     2     3     4
+     5     6     7
+     8     6     9
+
+>> C=[A B]
+
+C =
+
+     1     2     3     2     3     4
+     4     5     6     5     6     7
+     7     8     9     8     6     9
+
+>> D=[A;B]
+
+D =
+
+     1     2     3
+     4     5     6
+     7     8     9
+     2     3     4
+     5     6     7
+     8     6     9
